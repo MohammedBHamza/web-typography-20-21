@@ -9,6 +9,7 @@ Feel free to adjust the defaults to your needs.
 	opacity: 0;
 	transition: .05s;
 	position: absolute;
+	font-family: brenner;
 }
 #closed-captions .on {
 	opacity: 1;
@@ -20,6 +21,13 @@ Feel free to adjust the defaults to your needs.
 .voice1 {
 	font-style: italic;
 }
+
+p {
+	color: white;
+	font-size: 1.4em;
+}
+
+
 
 /* **********************************************
 The first paragraph, with extended timing for 
@@ -102,15 +110,703 @@ Sounds.
 	a sound starts.
 *********************************************  */
 
-/* The moment the class .sound1 is added to the body, the background is yellow */
-.sound1 {
-	background: yellow;
+body {
+	background-color: black;
 }
 
 iframe {
 	transition: 1s;
 }
-/* The moment the class .sound1 is added to the body, the movie makes a turn */
+
+iframe {
+	display: flex;
+	margin: 0 auto;
+	width: 900px;
+	height: 600px;
+}
+
+#closed-captions {
+	display: flex;
+	margin: auto;
+}
+
+#closed-captions {
+	margin: auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+/* Stemmen--------- */
+
+  /*Keyframes*/
+  
+  @keyframes glitch1 {
+	0% {
+	  transform: none;
+	  opacity: 1;
+	}
+	7% {
+	  transform: skew(-0.5deg, -0.9deg);
+	  opacity: 0.75;
+	}
+	10% {
+	  transform: none;
+	  opacity: 1;
+	}
+	27% {
+	  transform: none;
+	  opacity: 1;
+	}
+	30% {
+	  transform: skew(0.8deg, -0.1deg);
+	  opacity: 0.75;
+	}
+	35% {
+	  transform: none;
+	  opacity: 1;
+	}
+	52% {
+	  transform: none;
+	  opacity: 1;
+	}
+	55% {
+	  transform: skew(-1deg, 0.2deg);
+	  opacity: 0.75;
+	}
+	50% {
+	  transform: none;
+	  opacity: 1;
+	}
+	72% {
+	  transform: none;
+	  opacity: 1;
+	}
+	75% {
+	  transform: skew(0.4deg, 1deg);
+	  opacity: 0.75;
+	}
+	80% {
+	  transform: none;
+	  opacity: 1;
+	}
+	100% {
+	  transform: none;
+	  opacity: 1;
+	}
+  }
+  
+  @keyframes glitch2 {
+	0% {
+	  transform: none;
+	  opacity: 0.25;
+	}
+	7% {
+	  transform: translate(-2px, -3px);
+	  opacity: 0.5;
+	}
+	10% {
+	  transform: none;
+	  opacity: 0.25;
+	}
+	27% {
+	  transform: none;
+	  opacity: 0.25;
+	}
+	30% {
+	  transform: translate(-5px, -2px);
+	  opacity: 0.5;
+	}
+	35% {
+	  transform: none;
+	  opacity: 0.25;
+	}
+	52% {
+	  transform: none;
+	  opacity: 0.25;
+	}
+	55% {
+	  transform: translate(-5px, -1px);
+	  opacity: 0.5;
+	}
+	50% {
+	  transform: none;
+	  opacity: 0.25;
+	}
+	72% {
+	  transform: none;
+	  opacity: 0.25;
+	}
+	75% {
+	  transform: translate(-2px, -6px);
+	  opacity: 0.5;
+	}
+	80% {
+	  transform: none;
+	  opacity: 0.25;
+	}
+	100% {
+	  transform: none;
+	  opacity: 0.25;
+	}
+  }
+  
+  @keyframes glitch3 {
+	0% {
+	  transform: none;
+	  opacity: 0.25;
+	}
+	7% {
+	  transform: translate(2px, 3px);
+	  opacity: 0.5;
+	}
+	10% {
+	  transform: none;
+	  opacity: 0.25;
+	}
+	27% {
+	  transform: none;
+	  opacity: 0.25;
+	}
+	30% {
+	  transform: translate(5px, 2px);
+	  opacity: 0.5;
+	}
+	35% {
+	  transform: none;
+	  opacity: 0.25;
+	}
+	52% {
+	  transform: none;
+	  opacity: 0.25;
+	}
+	55% {
+	  transform: translate(5px, 1px);
+	  opacity: 0.5;
+	}
+	50% {
+	  transform: none;
+	  opacity: 0.25;
+	}
+	72% {
+	  transform: none;
+	  opacity: 0.25;
+	}
+	75% {
+	  transform: translate(2px, 6px);
+	  opacity: 0.5;
+	}
+	80% {
+	  transform: none;
+	  opacity: 0.25;
+	}
+	100% {
+	  transform: none;
+	  opacity: 0.25;
+	}
+  }
+
+  @keyframes glitch4 {
+	0% {
+	  transform: none;
+	  opacity: 1;
+	}
+	7% {
+	  transform: skew(-0.5deg, -0.9deg);
+	  opacity: 0.75;
+	}
+	10% {
+	  transform: none;
+	  opacity: 1;
+	}
+	27% {
+	  transform: none;
+	  opacity: 1;
+	}
+	30% {
+	  transform: skew(0.8deg, -0.1deg);
+	  opacity: 0.75;
+	}
+	35% {
+	  transform: none;
+	  opacity: 1;
+	}
+	52% {
+	  transform: none;
+	  opacity: 1;
+	}
+	55% {
+	  transform: skew(-1deg, 0.2deg);
+	  opacity: 0.75;
+	}
+	50% {
+	  transform: none;
+	  opacity: 1;
+	}
+	72% {
+	  transform: none;
+	  opacity: 1;
+	}
+	75% {
+	  transform: skew(0.4deg, 1deg);
+	  opacity: 0.75;
+	}
+	80% {
+	  transform: none;
+	  opacity: 1;
+	}
+	100% {
+	  transform: none;
+	  opacity: 1;
+	}
+  }
+  
+  @keyframes glitch5 {
+	0% {
+	  transform: none;
+	  opacity: 0.25;
+	}
+	7% {
+	  transform: translate(-2px, -3px);
+	  opacity: 0.5;
+	}
+	10% {
+	  transform: none;
+	  opacity: 0.25;
+	}
+	27% {
+	  transform: none;
+	  opacity: 0.25;
+	}
+	30% {
+	  transform: translate(-5px, -2px);
+	  opacity: 0.5;
+	}
+	35% {
+	  transform: none;
+	  opacity: 0.25;
+	}
+	52% {
+	  transform: none;
+	  opacity: 0.25;
+	}
+	55% {
+	  transform: translate(-5px, -1px);
+	  opacity: 0.5;
+	}
+	50% {
+	  transform: none;
+	  opacity: 0.25;
+	}
+	72% {
+	  transform: none;
+	  opacity: 0.25;
+	}
+	75% {
+	  transform: translate(-2px, -6px);
+	  opacity: 0.5;
+	}
+	80% {
+	  transform: none;
+	  opacity: 0.25;
+	}
+	100% {
+	  transform: none;
+	  opacity: 0.25;
+	}
+  }
+  
+  @keyframes glitch6 {
+	0% {
+	  transform: none;
+	  opacity: 0.25;
+	}
+	7% {
+	  transform: translate(2px, 3px);
+	  opacity: 0.5;
+	}
+	10% {
+	  transform: none;
+	  opacity: 0.25;
+	}
+	27% {
+	  transform: none;
+	  opacity: 0.25;
+	}
+	30% {
+	  transform: translate(5px, 2px);
+	  opacity: 0.5;
+	}
+	35% {
+	  transform: none;
+	  opacity: 0.25;
+	}
+	52% {
+	  transform: none;
+	  opacity: 0.25;
+	}
+	55% {
+	  transform: translate(5px, 1px);
+	  opacity: 0.5;
+	}
+	50% {
+	  transform: none;
+	  opacity: 0.25;
+	}
+	72% {
+	  transform: none;
+	  opacity: 0.25;
+	}
+	75% {
+	  transform: translate(2px, 6px);
+	  opacity: 0.5;
+	}
+	80% {
+	  transform: none;
+	  opacity: 0.25;
+	}
+	100% {
+	  transform: none;
+	  opacity: 0.25;
+	}
+  } 
+
+  @keyframes glitch7 {
+	0% {
+	  transform: none;
+	  opacity: 1;
+	}
+	7% {
+	  transform: skew(-0.5deg, -0.9deg);
+	  opacity: 0.75;
+	}
+	10% {
+	  transform: none;
+	  opacity: 1;
+	}
+	27% {
+	  transform: none;
+	  opacity: 1;
+	}
+	30% {
+	  transform: skew(0.8deg, -0.1deg);
+	  opacity: 0.75;
+	}
+	35% {
+	  transform: none;
+	  opacity: 1;
+	}
+	52% {
+	  transform: none;
+	  opacity: 1;
+	}
+	55% {
+	  transform: skew(-1deg, 0.2deg);
+	  opacity: 0.75;
+	}
+	50% {
+	  transform: none;
+	  opacity: 1;
+	}
+	72% {
+	  transform: none;
+	  opacity: 1;
+	}
+	75% {
+	  transform: skew(0.4deg, 1deg);
+	  opacity: 0.75;
+	}
+	80% {
+	  transform: none;
+	  opacity: 1;
+	}
+	100% {
+	  transform: none;
+	  opacity: 1;
+	}
+  }
+  
+  @keyframes glitch8 {
+	0% {
+	  transform: none;
+	  opacity: 0.25;
+	}
+	7% {
+	  transform: translate(-2px, -3px);
+	  opacity: 0.5;
+	}
+	10% {
+	  transform: none;
+	  opacity: 0.25;
+	}
+	27% {
+	  transform: none;
+	  opacity: 0.25;
+	}
+	30% {
+	  transform: translate(-5px, -2px);
+	  opacity: 0.5;
+	}
+	35% {
+	  transform: none;
+	  opacity: 0.25;
+	}
+	52% {
+	  transform: none;
+	  opacity: 0.25;
+	}
+	55% {
+	  transform: translate(-5px, -1px);
+	  opacity: 0.5;
+	}
+	50% {
+	  transform: none;
+	  opacity: 0.25;
+	}
+	72% {
+	  transform: none;
+	  opacity: 0.25;
+	}
+	75% {
+	  transform: translate(-2px, -6px);
+	  opacity: 0.5;
+	}
+	80% {
+	  transform: none;
+	  opacity: 0.25;
+	}
+	100% {
+	  transform: none;
+	  opacity: 0.25;
+	}
+  }
+  
+  @keyframes glitch9 {
+	0% {
+	  transform: none;
+	  opacity: 0.25;
+	}
+	7% {
+	  transform: translate(2px, 3px);
+	  opacity: 0.5;
+	}
+	10% {
+	  transform: none;
+	  opacity: 0.25;
+	}
+	27% {
+	  transform: none;
+	  opacity: 0.25;
+	}
+	30% {
+	  transform: translate(5px, 2px);
+	  opacity: 0.5;
+	}
+	35% {
+	  transform: none;
+	  opacity: 0.25;
+	}
+	52% {
+	  transform: none;
+	  opacity: 0.25;
+	}
+	55% {
+	  transform: translate(5px, 1px);
+	  opacity: 0.5;
+	}
+	50% {
+	  transform: none;
+	  opacity: 0.25;
+	}
+	72% {
+	  transform: none;
+	  opacity: 0.25;
+	}
+	75% {
+	  transform: translate(2px, 6px);
+	  opacity: 0.5;
+	}
+	80% {
+	  transform: none;
+	  opacity: 0.25;
+	}
+	100% {
+	  transform: none;
+	  opacity: 0.25;
+	}
+  }   
+
+  .sound4 {
+	/* color:cyan; */
+	/* font-weight: bold; */
+	animation: glitch1 1s ;
+}
+
+.sound4 {
+	animation: glitch2 1s ;
+  }
+ 
+.sound4 {
+	animation: glitch3 1s ;
+  }
+
+.sound6 {
+	animation: glitch4 1s;
+}
+
+.sound6 {
+	animation: glitch5 1s;
+  }
+ 
+.sound6 {
+	animation: glitch6 1s;
+  }
+
+.sound8 {
+	animation: glitch7 1s;
+}
+
+.sound8 {
+	animation: glitch8 1s;
+  }
+ 
+.sound8 {
+	animation: glitch9 1s;
+  } 
+
+  /* -----stemmen */
+
+.voice1 {
+	color:cyan;
+	font-weight: bold;
+}
+
+.voice2 {
+	color: white;
+	font-style: italic;
+}
+
+.voice3 {
+	font-size: 1em;
+transform: skew(-30deg);
+position: absolute;
+margin-top: -220px;
+margin-left: -100px;
+transform: rotate(-20deg);
+font-weight: bold;
+color: aqua;
+font-style: italic;
+}
+
+.voice3 iframe{
+	animation: glitch3 1s ease-out 0.8s;
+}
+
+.voice4 {
+	color: cyan;
+}
+
+/* Geluideen-------- */
+
+.sound0 iframe {
+    animation: schaduw 24s ease-in-out 0.5;
+}
+
+@keyframes schaduw {
+    0% {
+        box-shadow: 0px 0px 0px rgba(32, 0, 73, 0.5)
+    }
+
+	10% {
+        box-shadow: 0px 0px 300px rgb(71, 0, 163)
+    }
+
+	25% {
+		box-shadow: 0px 0px 115px rgba(52, 0, 82, 1)
+	}
+
+	90% {
+		box-shadow: 0px 0px 50px rgba(96, 0, 185, 1)
+	}
+
+    100% {
+        box-shadow: 0px 0px 0px rgba(22, 25, 216, 1)
+    }
+}
+
+/* Horn-------- */
 .sound1 iframe {
-	transform: rotate(1turn);
+    animation: shake 0.6s ease 0.5s;
+	/* animation: glitch3 1s ease-out 0.8s; */
+}
+
+@keyframes shake {
+	10%, 90% {
+	  transform: translate3d(-10px, 0, 0);
+	}
+	
+	20%, 80% {
+	  transform: translate3d(20px, 0, 0);
+	}
+  
+	30%, 50%, 70% {
+	  transform: translate3d(-40px, 0, 0);
+	}
+  
+	40%, 60% {
+	  transform: translate3d(40px, 0, 0);
+	}
+  }
+
+ /* .sound11 iframe {
+	width: 300px;
+	height: 300px;
+  } */
+
+  /* .sound11 iframe {
+    filter: hue-rotate(540deg) saturate(44);
+} */
+
+.sound8 iframe {
+	animation: grijs;
+}
+
+@keyframes grijs {
+	0% {
+		filter:contrast(1) brightness(1)
+   }
+
+	100% {
+		filter:contrast(250%) brightness(300%)
+   }
+}
+
+.sound8 iframe {
+	/* display: none; */
+	/* filter: grayscale(10%) */
+	animation: grijs;
+	animation-duration: 45.8s;
+}
+
+/* -----trip */
+
+@keyframes trip {
+	0% {
+		filter:invert(0%);
+		filter:hue-rotate(0deg);
+		filter: brightness(1);
+		filter:saturate(0);
+		box-shadow: 0px 0px 0px rgba(32, 0, 73, 0.5)
+   }
+
+	100% {
+		filter:invert(600%);
+		filter:hue-rotate(90deg);
+		filter: brightness(200%);
+		filter:saturate(100);
+		box-shadow: 0px 0px 400px rgba(95, 38, 170, 0.5)
+   }
+
+   .sound10 iframe {
+	animation: trip;
+	animation-duration: 44s;
 }
