@@ -112,6 +112,7 @@ Sounds.
 
 body {
 	background-color: black;
+	overflow: hidden;
 }
 
 iframe {
@@ -136,9 +137,69 @@ iframe {
     justify-content: space-around;
 }
 
+#closedcaps p {
+	font-family: brenner mono;
+	font-size: 18px;
+    position: absolute;
+	margin: -70px auto;
+	text-align: center;
+	width: 100%;
+	opacity: 0;
+	
+}
+
+
+/* Closed caps--------- */
+
+@keyframes caps {
+    0% {
+        opacity: 1
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+	90% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.sound0 #closedcaps .een {
+    animation: caps 8s;
+}
+
+.sound1 #closedcaps .twee {
+    animation: caps 2s;
+}
+
+.sound4 #closedcaps .drie {
+    animation: caps 2.5s;
+}
+
+.sound6 #closedcaps .vier {
+    animation: caps 2.5s;
+}
+
+.sound8 #closedcaps .vijf {
+    animation: caps 2.5s;
+}
+
+.sound9 #closedcaps .zes {
+    animation: caps 44s;
+}
+
+.sound10 #closedcaps .zeven {
+    animation: caps 45s;
+}
+
 /* Stemmen--------- */
 
-  /*Keyframes*/
+  /*Glitch Keyframes (effect van https://codemyui.com/tag/distortion-effect/)*/
   
   @keyframes glitch1 {
 	0% {
@@ -673,11 +734,16 @@ iframe {
 	animation: glitch9 1s;
   } 
 
+
+
+  
+
   /* -----stemmen */
 
 .voice1 {
-	color:cyan;
-	font-weight: bold;
+	color:yellow;
+	font-weight: medium;
+	font-style: italic;
 }
 
 .voice2 {
@@ -702,7 +768,10 @@ font-style: italic;
 }
 
 .voice4 {
-	color: cyan;
+	/* color: cyan; */
+	color:yellow;
+	font-weight: medium;
+	font-style: italic;
 }
 
 /* Geluideen-------- */
@@ -789,21 +858,34 @@ font-style: italic;
 
 /* -----trip */
 
+.sound10 iframe {
+	animation: trip;
+	animation-duration: 44s;
+}
+
 @keyframes trip {
 	0% {
 		filter:invert(0%);
 		filter:hue-rotate(0deg);
 		filter: brightness(1);
-		filter:saturate(0);
+		filter:saturate(1);
 		box-shadow: 0px 0px 0px rgba(32, 0, 73, 0.5)
    }
 
+   20% {
+	filter:invert(0%);
+	filter:hue-rotate(0deg);
+	filter: brightness(1);
+	filter:saturate(100%);
+	box-shadow: 0px 0px 0px rgba(32, 0, 73, 0.5)
+}
+
 	100% {
-		filter:invert(600%);
-		filter:hue-rotate(90deg);
-		filter: brightness(200%);
-		filter:saturate(100);
-		box-shadow: 0px 0px 400px rgba(95, 38, 170, 0.5)
+		filter:invert(50%);
+		filter:hue-rotate(45deg);
+		filter: brightness(50%);
+		filter:saturate(90);
+		box-shadow: 0px 0px 30px rgba(95, 38, 170, 0.5)
    }
 
    .sound10 iframe {
